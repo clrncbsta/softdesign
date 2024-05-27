@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(/softdesign/images/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    padding: 25px 12.5%;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 16px;
+    color: #e4e4e4;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 30px;
+
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: #e4e4e4;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s;
+}
+
+.navbar a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.contactUs {
+    position: relative;
+    width: 100%;
+    padding: 5px 100px;
+}
+
+.contactUs .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.contactUs .title h2 {
+    color: #fff;
+    font-weight: 500;
+    text-shadow: 2px 2px 4px #000000
+    
+}
+
+.form {
+    grid-area: form;
+}
+
+.info {
+    grid-area: info;
+}
+
+.map {
+    grid-area: map;
+}
+
+.contact {
+    padding: 40px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.15);
+}
+
+.box {
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.contact h3 {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    
+
+}
+/* FORM */
+
+.formBox {
+    position: relative;
+    width: 100%;
+}
+
+.formBox .row50 {
+    display: flex;
+    gap: 20px;
+
+}
+
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.formBox .row100 .inputBox {
+    width: 100%;   
+}
+
+.inputBox span {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.inputBox input {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
+.inputBox textarea {
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"] {
+    background: #f30505;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+
+.inputBox ::placeholder {
+    color: #999;
+}
+
+/* info */
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/softdesign/images/background.jpg') no-repeat center center/cover; /* Update with your background image */
+    z-index: -1; /* Ensure the background stays behind other content */
+}
+
+.info {
+    padding: 40px;
+    background: rgba(14, 57, 89, 0.8); /
+    box-shadow: 0 5px 35px;
+    position: relative;
+    z-index: 1; 
+    color: #fff;
+}
+
+.info {
+    background: black;
+}
+
+.info h3 {
+    color: #fff;
+}
+
+.info .infoBox div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info .infoBox div span {
+    min-width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5ek;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.info .infoBox div p {
+color: #fff;
+}
+
+.info .infoBox div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sci {
+    margin-top: 40px;
+    display: flex;
+}
+.sci li {
+    list-style: none;
+    margin-right: 15px;   
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+}
+
+.sci li a:hover {
+color: #fff;
+}
+
+.map {
+    padding: 0;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+}
